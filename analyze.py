@@ -28,10 +28,10 @@ def find_major_commons(name, client):
     try:
         # Cloud環境なら st.secrets["DATA"] が使える
         data_txt = st.secrets["MEMBER_DATA"]
-        st.print('secretsから取得')
+        st.write('secretsから取得')
     except Exception:
         data_txt = str(pd.read_csv("out.csv"))
-        st.print('out.csvから取得')
+        st.write('out.csvから取得')
          
     # ChatGPTを呼び出しスクリプト
     request_to_gpt = (
@@ -63,10 +63,10 @@ def find_similar_person(name, client):
     try:
         # Cloud環境なら st.secrets["DATA"] が使える
         data_txt = st.secrets["MEMBER_DATA"]
-        st.print('secretsから取得')
+        st.write('secretsから取得')
     except Exception:
         data_txt = str(pd.read_csv("out.csv"))
-        st.print('out.csvから取得')
+        st.write('out.csvから取得')
 
         
     # ChatGPTを呼び出しスクリプト
