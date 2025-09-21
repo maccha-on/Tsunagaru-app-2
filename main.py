@@ -104,8 +104,8 @@ st.sidebar.button("探そう！")
 # トップ画像 or キャラクター
 st.image("http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_ironman.png", caption="キャラクターなど表示")
 
-st.write("開発メモ: 現在は以下のメンバーに対応しています。")
-st.write("まっちゃん,よこ,まっと,あらぴー,まる,けーすけ,りいちろー,りょーま,えーちゃん")
+st.caption("開発メモ: 現在は以下のメンバーに対応しています。")
+st.caption("まっちゃん,よこ,まっと,あらぴー,まる,けーすけ,りいちろー,りょーま,えーちゃん")
 
 # データ分析を実行
 # ユーザー名を引数に渡して、共通点を探した結果をテキストで返す
@@ -122,7 +122,7 @@ with tab1:
         st.write("みんなとの共通点")
         st.write(out_text1)
     with col2:
-        st.write("共通点のある人")
+        st.write("共通点の多い人")
         st.write(out_text2)
 tab2.write("いいい")
 tab3.write("ううう")
