@@ -30,7 +30,7 @@ def find_major_commons(name, client):
         data_txt = st.secrets["MEMBER_DATA"]
         st.write('secretsから取得')
     except Exception:
-        data_txt = str(pd.read_csv("out.csv"))
+#        data_txt = str(pd.read_csv("out.csv"))
         st.write('out.csvから取得')
          
     # ChatGPTを呼び出しスクリプト
@@ -65,7 +65,7 @@ def find_similar_person(name, client):
         data_txt = st.secrets["MEMBER_DATA"]
         st.write('secretsから取得')
     except Exception:
-        data_txt = str(pd.read_csv("out.csv"))
+#        data_txt = str(pd.read_csv("out.csv"))
         st.write('out.csvから取得')
 
         
